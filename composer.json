@@ -1,7 +1,7 @@
 {
   "name": "time-unit-php/time-unit-php",
   "type": "library",
-  "description": "Based on java.util.concurrent.TimeUnit",
+  "description": "Somewhat based on java.util.concurrent.TimeUnit",
   "homepage": "https://github.com/jeserkin/time-unit-php",
   "keywords": [
     "time",
