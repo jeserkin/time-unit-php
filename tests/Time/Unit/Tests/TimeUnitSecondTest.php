@@ -11,7 +11,8 @@ class TimeUnitSecondTest extends TestCase
 	 */
 	public function testToNanos()
 	{
-		$this->assertEquals( pow(10, 9), TimeUnitSecond::toNanos( 1 ) );
+		$this->assertEquals( 1, TimeUnitSecond::toSeconds( 1 ) );
+		$this->assertEquals( 200, TimeUnitSecond::toSeconds( 200 ) );
 	}
 
 	/**

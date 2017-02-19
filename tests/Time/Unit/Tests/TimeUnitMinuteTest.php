@@ -19,7 +19,7 @@ class TimeUnitMinuteTest extends TestCase
 	 */
 	public function testSleep()
 	{
-		TimeUnitMinute::sleep( 1 );
+		TimeUnitMinute::sleep( 0 );
 		$this->assertTrue( true );
 	}
 }

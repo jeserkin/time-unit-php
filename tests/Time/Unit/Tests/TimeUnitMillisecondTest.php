@@ -12,6 +12,7 @@ class TimeUnitMillisecondTest extends TestCase
 	public function testToNanos()
 	{
 		$this->assertEquals( pow(10, 6), TimeUnitMillisecond::toNanos( 1 ) );
+		$this->assertEquals( 200 * pow(10, 6), TimeUnitMillisecond::toNanos( 200 ) );
 	}
 
 	/**

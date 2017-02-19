@@ -1,15 +1,15 @@
 <?php
 namespace Time\Unit;
 
-class TimeUnitSecond extends TimeUnit implements TimeUnitNanosecondsInterface
+class TimeUnitSecond extends TimeUnit implements TimeUnitSecondsInterface
 {
 	/**
 	 * @param int $delay
 	 * @return int
 	 */
-	public static function toNanos( $delay )
+	static function toSeconds( $delay )
 	{
-		return self::handleOverflow( $delay, self::C3 / self::C0, PHP_INT_MAX / ( self::C3 / self::C0 ) );
+		return $delay;
 	}
 
 	/**
@@ -17,6 +17,6 @@ class TimeUnitSecond extends TimeUnit implements TimeUnitNanosecondsInterface
 	 */
 	public static function sleep( $timeout )
 	{
-		self::sleepFor( 0, self::toNanos( $timeout ) );
+		self::sleepFor( self::toSeconds( $timeout ), 0 );
 	}
 }
